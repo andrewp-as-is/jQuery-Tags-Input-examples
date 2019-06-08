@@ -1,0 +1,21 @@
+<html>
+<head>
+<title>importTags()</title>
+<link rel="stylesheet" type="text/css" href="http://xoxco.com/examples/jquery.tagsinput.css">
+<script type="text/javascript" src="http://xoxco.com/examples/jquery.min.js"></script>
+<script type="text/javascript" src="http://xoxco.com/examples/jquery.tagsinput.js"></script>
+<script type="text/javascript">
+window.onload=function(){{
+$('#tags').tagsInput();
+
+$("button").click(function(){
+    $('#tags').importTags('');
+});
+}};
+</script>
+</head>
+<body>
+    <input name="tags" id="tags" value="foo,bar,baz" />
+<button>importTags('')</button>
+</body>
+</html>

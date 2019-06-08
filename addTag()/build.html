@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>addTag()</title>
+<link rel="stylesheet" type="text/css" href="http://xoxco.com/examples/jquery.tagsinput.css">
+<script type="text/javascript" src="http://xoxco.com/examples/jquery.min.js"></script>
+<script type="text/javascript" src="http://xoxco.com/examples/jquery.tagsinput.js"></script>
+<script type="text/javascript">
+window.onload=function(){{
+$('#tags').tagsInput();
+$("button").click(function(){
+    if ($('#tags').tagExist('new_tag')) {
+        $('#tags').removeTag('new_tag');
+    } else {
+        $('#tags').addTag('new_tag');
+    }
+});
+}};
+</script>
+</head>
+<body>
+    <input name="tags" id="tags" value="foo,bar,baz" />
+<button>add</button>
+</body>
+</html>

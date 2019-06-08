@@ -1,0 +1,3 @@
+http://xoxco.com/examples/jquery.tagsinput.css
+http://xoxco.com/examples/jquery.min.js
+http://xoxco.com/examples/jquery.tagsinput.js
